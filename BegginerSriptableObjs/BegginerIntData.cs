@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IntData : ScriptableObject
+public class BegginerIntData : ScriptableObject
 {
     public int value;
 
@@ -14,12 +14,7 @@ public class IntData : ScriptableObject
     {
         value += number;
     }
-
-    public void SubtrackValue(int number)
-    {
-        value -= number;
-    }
-
+    
     public void MultiplyValue(int number)
     {
         value *= number;

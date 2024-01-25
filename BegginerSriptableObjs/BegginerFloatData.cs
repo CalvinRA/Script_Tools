@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class FloatData : ScriptableObject
+public class BegginerFloatData : ScriptableObject
 {
     public float value;
 

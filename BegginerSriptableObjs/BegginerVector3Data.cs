@@ -1,15 +1,20 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Vector3Data : ScriptableObject
+public class BegginerVector3Data : ScriptableObject
 {
-    Vector3 position;
+    public Vector3 position;
 
     public void SetPosition(float x, float y, float z)
     {
         position = new Vector3(x, y, z);
     }
 
+    public void ChangePosition(float x, float y, float z)
+    {
+        position = position + new Vector3(x, y, z);
+    }
+    
     public void DisplayPosition(Text txt)
     {
         txt.text = position.ToString();
